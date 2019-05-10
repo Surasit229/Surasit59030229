@@ -1,9 +1,9 @@
-body{
+body {
     background:black;
     color: white;
 }
 
-header{
+header {
     padding: 10px 0px;
     font-size: 1.5em;
     text-align: center;
@@ -25,7 +25,7 @@ nav div {
     margin: 0px 10px;
 }
 
-a{
+a {
     color: #F0B27A;
 }
 
