@@ -1,20 +1,26 @@
 body {
-    background: yellow;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    background: #FFEE58;
 }
 
-div {
+article {
+    display: block;
+    margin: 100px 0px;
     padding: 100px 0px;
-    margin: 200px 200px;
-    font-size: 1000 px;
+    font-size: 60px;
     text-align: center;
     color: white;
     font-weight: bold;
+    grid-template-rows: 3fr;
+
 } 
 
-nav div {
-    padding: 10px 0px;
-    font-size: 3 em;
+footer {
+    padding: 30px 0px;
+    margin: 30px 0px;
+    grid-template-rows: 1fr;
+    font-size: 20px;
     text-align: center;
-    color: black;
-    font-weight: bold;
+    color: white;
 }

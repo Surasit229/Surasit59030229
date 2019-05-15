@@ -1,20 +1,20 @@
-body {
-    background: #FFEBEE;
-    color: black;
+ody {
+    background:black;
+    color: white;
 }
 
 header {
     padding: 10px 0px;
     font-size: 1.5em;
     text-align: center;
-    background-color: #F48FB1;
-    color: white;
+    background-color: #F0B27A;
+    color: black;
     font-weight: bold;
 }
 
 nav {
     display: flex;
-    color: #F48FB1;
+    color: #F0B27A;
     margin: 5px;
     padding: 10px 5px;
 }
@@ -26,7 +26,7 @@ nav div {
 }
 
 a {
-    color: #F48FB1;
+    color: #F0B27A;
 }
 
 footer {
@@ -37,6 +37,6 @@ footer {
     margin: 5px 5px; 
     padding: 10px;
     text-align: center; 
-    background-color: #F48FB1;
-    color: white;
+    background-color: #F0B27A;
+    color: black;
 }
