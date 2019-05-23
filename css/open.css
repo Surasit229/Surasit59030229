@@ -24,3 +24,9 @@ footer {
     text-align: center;
     color: white;
 }
+
+div {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}

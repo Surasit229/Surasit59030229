@@ -5,22 +5,21 @@ body {
 
 header {
     padding: 300px 0px 10PX 10PX;
-    font-size: 1.5em;
+    font-size: 50px;
     text-align: left;
     color: white;
     font-weight: bold;
-    font-family: Microsoft Sans Serif ,Arial;
-    background: #F48FB1;
+    background: #F08080;
 }
 
 .BgHead {
-    background-image: url(/Surasit59030229-1/image/bg1.jpg); 
+    background-image: url(/Surasit59030229-1/image/bg1.jpg);
 }
 
 
 nav {
     display: flex;
-    color: #F48FB1;
+    color: #F08080;
     margin: 5px;
     padding: 10px 5px;
 }
@@ -32,7 +31,7 @@ nav div {
 }
 
 a {
-    color: #F48FB1;
+    color: #F08080;
 }
 
 footer {
@@ -43,6 +42,6 @@ footer {
     margin: 5px 5px; 
     padding: 10px;
     text-align: center; 
-    background-color: #F48FB1;
+    background-color: #F08080;
     color: white;
 }
