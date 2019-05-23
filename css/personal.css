@@ -4,34 +4,32 @@ body {
 }
 
 header {
-    padding: 300px 0px 10PX 10PX;
-    font-size: 50px;
+    padding: 300px 0px 25PX 35PX;
+    font-size: 60px;
     text-align: left;
     color: white;
     font-weight: bold;
-    background: #F08080;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(https://images.pond5.com/worship-background-luminance-purple-pink-footage-026056350_prevstill.jpeg);
+    background-repeat: no-repeat;
+    
 }
-
-.BgHead {
-    background-image: url(/Surasit59030229-1/image/bg1.jpg);
-}
-
 
 nav {
     display: flex;
-    color: #F08080;
     margin: 5px;
     padding: 10px 5px;
+}
+
+.menu {
+    color: #EC407A;
 }
 
 nav div {
     font-size: 1.5em;
     line-height: 30px;
     margin: 0px 10px;
-}
-
-a {
-    color: #F08080;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer {
@@ -42,6 +40,66 @@ footer {
     margin: 5px 5px; 
     padding: 10px;
     text-align: center; 
-    background-color: #F08080;
+    background-color: #EC407A;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+article div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "sun    mon"
+        "tue    wed"
+        "thr    fri"
+        "sat    start";
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "canvas div";
+}
+
+section {
+    padding: 35px 0px 0px 0px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#sun {
+    background: red;
+}
+
+#mon {
+    background: yellow;
+}
+
+#tue {
+    background: pink;
+}
+
+#wed {
+    background: green;
+}
+
+#thr {
+    background: orange;
+}
+
+#fri {
+    background: blue;
+}
+
+#sat {
+    background: purple;
+}
+
+#start {
+    background: #EC407A;
 }
