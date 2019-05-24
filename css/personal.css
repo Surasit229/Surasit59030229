@@ -12,7 +12,6 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(https://images.pond5.com/worship-background-luminance-purple-pink-footage-026056350_prevstill.jpeg);
     background-repeat: no-repeat;
-    
 }
 
 nav {
@@ -23,6 +22,10 @@ nav {
 
 .menu {
     color: #EC407A;
+}
+
+div a {
+    color: white;
 }
 
 nav div {
@@ -49,11 +52,6 @@ footer {
 article div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "sun    mon"
-        "tue    wed"
-        "thr    fri"
-        "sat    start";
     font-size: 1.5em;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -61,9 +59,6 @@ article div {
 
 article {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-        "canvas div";
 }
 
 section {
@@ -100,6 +95,20 @@ section {
     background: purple;
 }
 
-#start {
+#days {
     background: #EC407A;
+}
+ 
+/*small screen*/
+@media screen and (max-width: 650px) {
+    article {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/*large screen*/
+@media screen and (min-width: 650px) {
+    article {
+        grid-template-columns: 1fr 2fr;
+    }
 }

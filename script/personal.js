@@ -1,7 +1,7 @@
 //part1
 (function () {
     `use strict`;
-    var canvas = document.querySelector(`#myClock`),
+    var canvas = document.querySelector(`#Clock`),
         canvasContext = canvas.getContext(`2d`),
         //clock settings
         cX = canvas.width / 2,
@@ -57,7 +57,7 @@
         drawMinutesHand();
         drawHoursHand();
         drawLittleCircle();
-        drawAnother();
+        drawDefault();
     }
 
     //part3
@@ -107,18 +107,10 @@
         canvasContext.beginPath();
         canvasContext.arc(cX, cY, radius, startAngle, endAngle, counterClockwise);
         canvasContext.lineWidth = lineWidth;
-        canvasContext.strokeStyle = "black";
+        canvasContext.strokeStyle = "#EC407A";
         canvasContext.stroke();
         canvasContext.closePath();
-        /*canvasContext.beginPath();
-        canvasContext.strokeStyle = "#FFC0CB";  //สีเข็ม
-        canvasContext.fillStyle = "#F5FFFA";    //สีพื้นหลัง
-        canvasContext.lineWidth = 6;            //ความหนาเข็ม
-        canvasContext.fillRect(30, 30, 340, 340);
-        canvasContext.stroke();
-        canvasContext.closePath();
-        canvasContext.fillStyle = "#FFC0CB";    //สีขอบ
-        canvasContext.strokeRect(30, 30, 340, 340);*/
+
     }
 
     //จุดวางเข็ม
@@ -126,14 +118,14 @@
         drawArcAtPosition(cX, cY, 4, 0 * Math.PI, 2 * Math.PI, false, 4);
     }
 
-    //Another clock face
+    //รูปแบบหน้าปัด
     function drawNumber() {
         var ang;
         var num;
         canvasContext.font = radius * 0.225 + "px arial";  //ขนาดอักษร
         canvasContext.textBaseline = "middle";
         canvasContext.textAlign = "center";
-        canvasContext.fillStyle = 'Black';  //สีอักษร
+        canvasContext.fillStyle = 'black';  //สีอักษร
         for (num = 1; num <= 12; num++) { 
             ang = num * Math.PI / 6;
             canvasContext.rotate(ang);
@@ -146,37 +138,12 @@
         }
     }
     
-    
-    function drawAnother() {
-        
-        var correction = 1 / 300,
-            shiftUnit = 1 / 170,
-            shiftFactor = 1/ 30,
-            angleInitialPosition = 2,
-            angleCurrentPositionBegin = 0,
-            angleCurrentPositionEnd = 0,
-            repeat = 60,
-            lineWidth = 10;
-        for (var i=0; i < repeat; i+=1) {
-            angleCurrentPositionBegin = angleInitialPosition - (i * shiftFactor) - correction;
-            angleCurrentPositionEnd = angleCurrentPositionBegin + shiftUnit;
-            if (i % 5 == 0) lineWidth = 20;
-            else lineWidth = 10;
-            drawArcAtPosition(cX, cY, radius, angleCurrentPositionBegin * Math.PI, angleCurrentPositionEnd * Math.PI, false, lineWidth);
-        }
-
-        /*canvasContext.beginPath();
-        canvasContext.strokeStyle = "#FFC0CB";  //สีเข็ม
-        canvasContext.fillStyle = "#F5FFFA";    //สีพื้นหลัง
-        canvasContext.lineWidth = 6;            //ความหนาเข็ม
-        canvasContext.fillRect(30, 30, 340, 340);
+    function drawDefault() {
+        canvasContext.beginPath();
         canvasContext.stroke();
+        canvasContext.strokeRect(30, 30, 340, 340);
         canvasContext.closePath();
-        canvasContext.fillStyle = "#FFC0CB";    //สีขอบ
-        canvasContext.strokeRect(30, 30, 340, 340);*/
-
         drawLittleCircle(cX, cY);
         drawNumber();
     }
-
 })();
