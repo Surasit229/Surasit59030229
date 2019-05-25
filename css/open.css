@@ -8,7 +8,7 @@ article {
     display: block;
     margin: 100px 0px;
     padding: 100px 0px;
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -21,13 +21,5 @@ footer {
     padding: 30px 0px;
     margin: 30px 0px;
     grid-template-rows: 1fr;
-    font-size: 20px;
     text-align: center;
-    color: white;
-}
-
-div {
-    color: #000;
-    font-size: 1em;
-    font-weight: bold;
 }

@@ -1,0 +1,203 @@
+/*กำหนด body ของแต่ละหน้า*/
+body {
+    color: black;
+}
+#bodydays {
+    background: #F8E0EC;
+}
+#bodyhoroscopes {
+    background: #F5ECCE;
+}
+#bodybloods {
+    background: #F2F2F2;
+}
+#bodyasterisms {
+    background: #CEF6CE;
+}
+
+/*กำหนด header*/
+header {
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/*กำหนดสีของ header และ footer แต่ละหน้า*/
+.days {
+    background-color: #FF0080;
+}
+.horoscopes {
+    background-color: #FFBF00;
+}
+.bloods {
+    background-color: #FF2E64;
+}
+.asterisms {
+    background-color: #04B431;
+}
+
+/*กำหนดแถบเมนู*/
+nav {
+    display: flex;
+    margin: 5px;
+    padding: 10px 5px;
+}
+nav div a {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin: 0px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navdays div a {
+    color: #FF0080;
+}
+#navhoroscopes div a {
+    color: #FFBF00;
+}
+#navbloods div a {
+    color: #FF2E64;
+}
+#navasterisms div a{
+    color: #04B431;
+}
+
+/*กำหนด section*/
+section {
+    padding: 5px 0px 5px 5px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: white
+}
+.secbloods {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*กำหนด main ให้เป็น grid*/
+main {
+    display: grid;
+}
+
+/*กำหนด article*/
+article {
+    margin: 0px 10px;
+}
+.ardays {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ArHoroAster {
+    font-family: 'Mali', cursive;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*กำหนดเนื้อหา*/
+p {
+    font-family: 'Mali', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1em;
+}
+
+/*กำหนด footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em; 
+    line-height: 30px;
+    margin: 5px 5px; 
+    padding: 10px;
+    text-align: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+/*กำหนดสีของ section ในหน้า days.html*/
+#sun {background: red;}
+#mon {background: yellow;}
+#tue {background: pink;}
+#wed {background: green;}
+#thr {background: orange;}
+#fri {background: blue;}
+#sat {background: purple;}
+
+/*กำหนดสีของ section ในหน้า horoscopes.html*/
+#capricorn {background: #FE642E;}
+#aquarius {background: #0174DF;}
+#pisces {background: #64FE2E;}
+#aries {background: #FA58F4;}
+#taurus {background: #B45F04;}
+#gemini {background: #A901DB;}
+#cancer {background: #00BFFF;}
+#leo {background: #FE2E2E;}
+#virgo {background: #2E64FE;}
+#libra {background: #6E6E6E;}
+#scorpio {background: #FE2E64;}
+#sagittarius {background: #FFBF00;}
+
+/*กำหนดสีของ section ในหน้า bloods.html*/
+#A {background: #FF00FF;}
+#B {background: #01DFD7;}
+#O {background: #FFBF00;}
+#AB {background: #3ADF00;}
+
+/*กำหนดสีของ section ในหน้า asterisms.html*/
+#rat {background: #FE2E2E;}
+#ox {background: #01A9DB;}
+#tiger {background: #FF8000;}
+#rabbit {background: #01DFA5;}
+#greatsnake {background: #04B404;}
+#snake {background: #B4045F;}
+#horse {background: #0431B4;}
+#goat {background: #D7DF01;}
+#monkey {background: #DF3A01;}
+#cock {background: #FF0040;}
+#dog {background: #04B45F;}
+#pig {background: #FE2EC8;}
+
+/*กำหนด media query*/
+/*small screen*/
+@media screen and (max-width: 650px) {
+    main {
+        grid-template-rows: 1fr;
+    }
+    #mainbloods {
+        grid-template-rows: 1fr;
+    }
+}
+/*medium sreen*/
+@media screen and (min-width: 650px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*large screen*/
+@media screen and (min-width: 1300px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #mainbloods {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/*ปุ่ม back to top*/
+/*credit by : https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+#top {
+    display: none; /*Hidden by default*/
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #585858; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}

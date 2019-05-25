@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="widht=device-width, initial-scale=1.0">
         <title>Horoscope</title>
-        <link rel="stylesheet" href="css/day.css">
+        <link rel="stylesheet" href="css/fortune.css">
         <link href="https://fonts.googleapis.com/css?family=Mali|Prompt&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header>
-            Fortune 7 days
+    <body id="bodydays">
+        <header class="days">
+            7 days
         </header>
-        <nav>
+        <nav id="navdays">
             <div><a href="personal.html" class="menu">Home</a></div>
             <div><a href="open.html" class="menu">Special</a></div>
             <div><a href="AboutMe.html" class="menu">About Me</a></div>
             <div><a href="credit.html" class="menu">Credit</a></div>
         </nav>
         <main>
-            <article>
+            <article class="ardays">
                 <section id="sun">
                     Sunday
                 </section>
@@ -29,7 +29,7 @@
                     ไม่ว่าชายหรือหญิงที่เกิดวันนี้มีดีและจะประสบความสำเร็จแบบเวิร์คสุด ๆ เชียวแหละ
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="mon">
                     Monday
                 </section>
@@ -42,7 +42,7 @@
                     แต่ถ้าจะให้เหมาะน่าจะทำงานด้านการขาย ขายอะไรก็ได้รับรองรุ่งสุด ๆ ขออย่างเดียวอย่าเจ้าเล่ห์มากนักเป็นพอ
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="tue">
                     Tuesday
                 </section>
@@ -55,7 +55,7 @@
                     จะดีกว่าไปทำอย่างอื่น ถ้าลดเรื่องการเอาแต่ใจตัวเองลงได้บ้าง รับรองตำแหน่งการงานไม่น้อยหน้าใครหรอก
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="wed">
                     Wednesday
                 </section>
@@ -68,7 +68,7 @@
                     งานมีไว้ให้ทำเฉย ๆ ไม่ได้มีไว้ให้บ้า หาเวลาดูแลเพศตรงข้ามบ้าง และต้องหมั่นดูแลสุขภาพให้ดีด้วยนะจะบอกให้
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="thr">
                     Thursday
                 </section>
@@ -79,7 +79,7 @@
                     อนาคตจะเป็นคนใหญ่คนโต มีชื่อเสียง มีคนนับหน้าถือตาและมีความสุขในครอบครัวขอเพียงเลือกคู่ที่จะมาครองให้ดีเท่านั้นเอง
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="fri">
                     Friday
                 </section>
@@ -90,7 +90,7 @@
                     ถ้าระงับอารมณ์เอาไว้ได้อะไร ๆ ก็จะดีไปหมดทั้งเรื่องรัก การเงินและการงาน งานที่เหมาะที่สุดก็เป็นพวกสถาปนิก ศิลปิน ครีเอทีฟ
                 </p>
             </article>
-            <article>
+            <article class="ardays">
                 <section id="sat">
                     Saturday
                 </section>
@@ -102,10 +102,14 @@
                 </p>
             </article>
         </main>
-        <footer>
+        <div>
+            <button onclick="topFunction()" id="top">back to top</button>
+        </div>
+        <footer class="days">
             <div>03376809 WEB TECHNOLOGY</div>
             <div>Faculty of Industrial Education and Technology</div>
             <div>King Mongkut's Institute of Technology Ladkrabang</div>
         </footer>
+        <script src="JavaScript/backtotop.js"></script>
     </body>
 </html>

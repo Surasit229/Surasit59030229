@@ -46,10 +46,10 @@ footer {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: 20px;
 }
 
 #sec1 {
-    font-size: 30px;
     font-weight: bold;
     font-style: italic;
     padding: 10px;
@@ -57,11 +57,29 @@ main {
 }
 
 #sec2 {
-    font-size: 30px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 section div {
-    margin: 20px 0px;
+    margin: 30px 0px;
+}
+
+#code {
+    margin: 188px 0px 0px 0px;
+}
+
+/*กำหนด media query*/
+/*small screen*/
+@media screen and (max-width: 650px) {
+    main {
+        grid-template-rows: 1fr;
+    }
+}
+
+/*large screen*/
+@media screen and (min-width: 1300px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 }

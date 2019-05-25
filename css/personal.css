@@ -62,43 +62,28 @@ article {
 }
 
 section {
-    padding: 35px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     margin: 5px;
     border-radius: 10px;
 }
 
-#sun {
-    background: red;
-}
-
-#mon {
-    background: yellow;
-}
-
-#tue {
-    background: pink;
-}
-
-#wed {
-    background: green;
-}
-
-#thr {
-    background: orange;
-}
-
-#fri {
-    background: blue;
-}
-
-#sat {
-    background: purple;
-}
-
 #days {
-    background: #EC407A;
+    background: #01DFA5;
 }
- 
+
+#horoscopes {
+    background: #01DF3A;
+}
+
+#bloods {
+    background: #FE642E;
+}
+
+#asterisms {
+    background: #DBA901;
+}
+
+/*กำหนด media query*/
 /*small screen*/
 @media screen and (max-width: 650px) {
     article {
